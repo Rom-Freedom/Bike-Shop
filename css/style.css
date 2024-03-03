@@ -22,6 +22,7 @@ body {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--black-color);
+  background-color: gray;
 }
 
 img {
@@ -99,6 +100,28 @@ img {
 /* LOGO */
 .logo {
   width: 154px;
+}
+
+/* NAV MENU */
+.menu__list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.menu__link {
+  color: #fff;
+  transition: outline-color var(--transition-duration),
+  background-color var(--transition-duration);
+}
+.menu__link:focus-visible {
+  color: var(--black-color);
+  background-color: var(--base-color);
+}
+.menu__link:hover {
+  color: var(--base-color-hover);
+}
+.menu__link:active {
+  color: var(--base-color-active);
 }
 
 @media (max-width: 740px) {

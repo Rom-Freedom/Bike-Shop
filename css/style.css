@@ -1,54 +1,78 @@
 :root {
-    --black-color: #263238;
-    --base-color: #baEf00;
-    --base-color-hover: #d9ff56;
-    --base-color-active: #a3d200;
-    --border-color: #e3e3e3;
-    --placeholder-color: #8d8d8d;
-    --transition-duration: .3s;
+  --black-color: #263238;
+  --base-color: #baef00;
+  --base-color-hover: #d9ff56;
+  --base-color-active: #a3d200;
+  --border-color: #e3e3e3;
+  --placeholder-color: #8d8d8d;
+  --transition-duration: 0.3s;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    border: none;
-    outline: none;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+}
 
-  body {
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--black-color);
-  }
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--black-color);
+}
 
-  img {
-    max-width: 100%;
-  }
+img {
+  max-width: 100%;
+}
 
-  .container {
-    max-width: 780px;
-    margin: 0 auto;
-    padding: 20px 40px;
-  }
-  .default-link {
-    color: var(--black-color);
-    font-size: 20px;
-    text-decoration: underline;
-    transition: color var(--transition-duration), background-color var(--transition-duration);
-  }
-  .default-link:focus-visible {
-    background-color: var(--base-color);
-  }
-  .default-link:hover {
-    color: var(--base-color-hover);
-  }
-  .default-link:active {
-    color: var(--base-color-active);
-  }
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
 
-  @media (max-width: 740px) {
-    
-  }
+/* LINKS */
+.default-link {
+  color: var(--black-color);
+  text-decoration: underline;
+  transition: color var(--transition-duration),
+  background-color var(--transition-duration);
+}
+.default-link:focus-visible {
+  background-color: var(--base-color);
+}
+.default-link:hover {
+  color: var(--base-color-hover);
+}
+.default-link:active {
+  color: var(--base-color-active);
+}
+
+/* BUTTON */
+.default-btn {
+  display: inline-block;
+  background-color: var(--base-color);
+  color: var(--black-color);
+  padding: 11px 47px;
+  border-radius: 12px;
+  outline: 1px solid transparent;
+  outline-offset: 2px;
+  transition: outline-color var(--transition-duration),
+  background-color var(--transition-duration);
+  cursor: pointer;
+}
+.default-btn:focus-visible {
+  outline-color: var(--base-color);
+}
+.default-btn:hover {
+  background-color: var(--base-color-hover);  
+}
+.default-btn:active {
+  background-color: var(--base-color-active);
+}
+
+@media (max-width: 740px) {
+}

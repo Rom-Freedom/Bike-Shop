@@ -89,5 +89,17 @@ img {
   border-color: var(--base-color);
 }
 
+/* SUBTITLE */
+.subtitle {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+/* LOGO */
+.logo {
+  width: 154px;
+}
+
 @media (max-width: 740px) {
 }

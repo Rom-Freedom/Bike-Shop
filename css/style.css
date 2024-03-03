@@ -5,6 +5,7 @@
     --base-color-active: #a3d200;
     --border-color: #e3e3e3;
     --placeholder-color: #8d8d8d;
+    --transition-duration: .3s;
 }
 
 * {
@@ -31,6 +32,21 @@
     max-width: 780px;
     margin: 0 auto;
     padding: 20px 40px;
+  }
+  .default-link {
+    color: var(--black-color);
+    font-size: 20px;
+    text-decoration: underline;
+    transition: color var(--transition-duration), background-color var(--transition-duration);
+  }
+  .default-link:focus-visible {
+    background-color: var(--base-color);
+  }
+  .default-link:hover {
+    color: var(--base-color-hover);
+  }
+  .default-link:active {
+    color: var(--base-color-active);
   }
 
   @media (max-width: 740px) {

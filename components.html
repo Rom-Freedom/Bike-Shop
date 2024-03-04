@@ -11,7 +11,7 @@
     <div class="container">
         <a href="#" class="default-link">Link</a>
         <button class="default-btn">Send</button>
-        <input type="text" class="text-field" placeholder="phone">
+        <input type="text" class="text-field" placeholder="hint">
         <h2 class="subtitle">Subtitle</h2>
         <img class="logo" width="154" src="img/logo.svg" alt="BikeShop">
         <nav class="menu">
@@ -30,6 +30,44 @@
                 </li>
             </ul>
         </nav>
+        <!-- Callback Form -->
+        <form action="" class="callback-form">
+            <input type="tel" name="tel" class="text-field callback-form__inp" placeholder="phone">
+            <button type="submit" class="default-btn callback-form__btn">Submit</button>
+        </form>
+        <!-- Card -->
+        <article class="product-card">
+            <img class="product-card__img" src="./img/1.jpg" alt="bike">
+            <div class="product-card__body">
+                <div class="product-card__body-top">
+                    <h3 class="product-card__title">
+                        Велосипед BMX
+                        Tech Team Goof 20
+                    </h3>
+                    <strong class="product-card__price">
+                        12 830 руб
+                    </strong>
+                </div>
+                <button class="default-btn product-card__btn">Buy</button>
+            </div>
+        </article>
+
+        <!-- Modified card -->
+        <article class="product-card product-card_big">
+            <img class="product-card__img_big" src="./img/5.jpg" alt="bike">
+            <div class="product-card__body product-card__body_big">
+                <div class="product-card__body-top">
+                    <h3 class="product-card__title">
+                        Велосипед BMX
+                        Tech Team Goof 20
+                    </h3>
+                    <strong class="product-card__price product-card__price_big">
+                        12 830 руб
+                    </strong>
+                </div>
+                <button class="default-btn product-card__btn product-card__btn_big">Buy</button>
+            </div>
+        </article>
     </div>
 </body>
 </html>

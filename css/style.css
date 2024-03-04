@@ -236,6 +236,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 30px;
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -247,6 +248,7 @@ img {
   background-image: url(../img/hero.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .hero__content {
   flex-basis: 484px;
@@ -310,5 +312,17 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     width: fit-content;
+  }
+
+  /* Hero */
+  .hero__container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .hero__container::after {
+    display: none;
+  }
+  .hero__title {
+    font-size: 28px;
   }
 }
